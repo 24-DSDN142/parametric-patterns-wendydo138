@@ -19,5 +19,30 @@ function wallpaper_background() {
 }
 
 function my_symbol() { // do not rename this function. Treat this similarly to a Draw function
-  rect(40 ,40, rect_width, rect_height);
+  var flower_x = 25;
+  var flower_y = 55;
+  
+  flower(flower_x, flower_y);
+  flower(flower_x+40, flower_y+40);
+  flower(flower_x+80, flower_y+80);
+  flower(flower_x+120, flower_y+120);
+
+}
+
+function flower(x, y) {
+  let pistilSize = 15; 
+  let petalx = 30;
+  let petaly = 20;
+  
+
+  fill('pink'); //petals
+  stroke('white');
+  ellipse(x-10, y, petalx, petaly);
+  ellipse(x, y-10, petalx-10, petaly+10);
+  ellipse(x+10, y, petalx, petaly);
+  ellipse(x, y+10, petalx-10, petaly+10);
+
+  fill('lightyellow');
+  circle(x, y, pistilSize); //pistil
+
 }
