@@ -9,11 +9,11 @@ let outerEyesColor = "#fcf803";
 let innerEyesColor = "white";
 let furColor = "black";
 let innerFurColor = "white";
-let isHoldingLightstick = true;
+let isHoldingLightstick = false;
 let lightStickDistanceX = 0;
 let lightStickDistanceY = 0;
 let lightStickRotateAngle = 20;
-let eyesPosXOffset = 0;
+let eyesPosXOffset = 10;
 let eyesPosYOffset = 0;
 let headPopOut = true;
 
