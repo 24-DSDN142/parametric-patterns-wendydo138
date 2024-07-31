@@ -4,6 +4,11 @@
 // let innerEyesColor = color('white');
 // let furColor = color('black');
 // let innerFurColor = color('white');
+let bgColor = "skyblue";
+let outerEyesColor = "#fcf803";
+let innerEyesColor = "white";
+let furColor = "black";
+let innerFurColor = "white";
 let isHoldingLightstick = true;
 let lightStickDistanceX = 0;
 let lightStickDistanceY = 0;
@@ -24,7 +29,7 @@ function setup_wallpaper(pWallpaper) {
 }
 
 function wallpaper_background() {
-  let bgColor = color('#ffff81cb');
+  //let bgColor = color('skyblue');
   background(bgColor);
 }
 
@@ -32,10 +37,10 @@ function my_symbol() { // do not rename this function. Treat this similarly to a
   scale(0.8);
   angleMode(DEGREES);
 
-  let outerEyesColor = color('#fcf803');
-  let innerEyesColor = color('white');
-  let furColor = color('black');
-  let innerFurColor = color('white');
+  // let outerEyesColor = color('#fcf803');
+  //let innerEyesColor = color('white');
+  //let furColor = color('black');
+  //let innerFurColor = color('white');
 
   drawOuterEars(furColor);
   drawInnerEar(innerFurColor);
