@@ -56,10 +56,10 @@ function drawHead(furColor) {
   fill(furColor);
 
   beginShape(); // inner head
-  vertex(160, 163);
-  vertex(100, 86);
-  vertex(211, 66);
-  vertex(193, 153);
+  vertex(159, 164);
+  vertex(99, 85);
+  vertex(212, 67);
+  vertex(194, 153);
   endShape(CLOSE);
 
   beginShape(); // left side of the head
@@ -72,7 +72,7 @@ function drawHead(furColor) {
   beginShape(); // top side of the head
   curveVertex(50, 350);
   curveVertex(100, 86);
-  curveVertex(211, 66);
+  curveVertex(212.5, 67);
   curveVertex(300, 260);
   endShape();
 
