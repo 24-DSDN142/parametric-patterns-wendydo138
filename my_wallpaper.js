@@ -16,6 +16,8 @@ let lightStickRotateAngle = 20;
 let eyesPosXOffset = 10;
 let eyesPosYOffset = 0;
 let headPopOut = true;
+let innerBodyWidth = 60;
+let innerBodyHeight = 60;
 
 function setup_wallpaper(pWallpaper) {
   pWallpaper.output_mode(DEVELOP_GLYPH);
@@ -48,7 +50,7 @@ function my_symbol() { // do not rename this function. Treat this similarly to a
   drawEyes(outerEyesColor, innerEyesColor, eyesPosXOffset, eyesPosYOffset, headPopOut);
   drawMoustache(furColor);
   drawOuterBody(furColor);
-  drawInnerBody(innerFurColor);
+  drawInnerBody(innerFurColor, innerBodyWidth, innerBodyHeight);
   drawLegs(furColor, innerFurColor);
   drawTail(furColor);
   if (isHoldingLightstick) {
@@ -207,14 +209,14 @@ function drawOuterBody(furColor) {
   endShape();
 }
 
-function drawInnerBody(innerFurColor) {
+function drawInnerBody(innerFurColor, innerBodyWidth, innerBodyHeight) {
   rotate(75);
 
   strokeWeight(1);
   stroke(innerFurColor);
   fill(innerFurColor);
 
-  ellipse(245, -127, 70, 60); // inner body
+  ellipse(245, -127, innerBodyWidth, innerBodyHeight); // inner body
 
   rotate(-75);
 }
