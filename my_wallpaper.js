@@ -9,15 +9,16 @@ let outerEyesColor = "#fcf803";
 let innerEyesColor = "white";
 let furColor = "black";
 let innerFurColor = "white";
-let isHoldingLightstick = false;
+let isHoldingLightstick = true;
 let lightStickDistanceX = 0;
 let lightStickDistanceY = 0;
 let lightStickRotateAngle = 20;
 let eyesPosXOffset = 10;
 let eyesPosYOffset = 0;
-let headPopOut = true;
-let innerBodyWidth = 60;
+let headPopOut = false;
+let innerBodyWidth = 70;
 let innerBodyHeight = 60;
+let innerBodyType = 2; // 1: normal ellipse; 2: Doraemon-like shape
 
 function setup_wallpaper(pWallpaper) {
   pWallpaper.output_mode(DEVELOP_GLYPH);
@@ -50,7 +51,7 @@ function my_symbol() { // do not rename this function. Treat this similarly to a
   drawEyes(outerEyesColor, innerEyesColor, eyesPosXOffset, eyesPosYOffset, headPopOut);
   drawMoustache(furColor);
   drawOuterBody(furColor);
-  drawInnerBody(innerFurColor, innerBodyWidth, innerBodyHeight);
+  drawInnerBody(innerFurColor, innerBodyWidth, innerBodyHeight, innerBodyType);
   drawLegs(furColor, innerFurColor);
   drawTail(furColor);
   if (isHoldingLightstick) {
@@ -209,14 +210,18 @@ function drawOuterBody(furColor) {
   endShape();
 }
 
-function drawInnerBody(innerFurColor, innerBodyWidth, innerBodyHeight) {
+function drawInnerBody(innerFurColor, innerBodyWidth, innerBodyHeight, innerBodyType) {
   rotate(75);
 
   strokeWeight(1);
   stroke(innerFurColor);
   fill(innerFurColor);
 
-  ellipse(245, -127, innerBodyWidth, innerBodyHeight); // inner body
+  if (innerBodyType === 1) {
+    ellipse(245, -127, innerBodyHeight, innerBodyWidth); // inner body ellipse shape. Its width and height are reversed due to the rotation
+  } else {
+    arc(245, -127, innerBodyHeight, innerBodyWidth, 270, 90); // inner body Doraemon-like shape. Its width and height are reversed due to the rotation
+  }
 
   rotate(-75);
 }
