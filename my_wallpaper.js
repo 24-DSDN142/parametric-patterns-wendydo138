@@ -1,29 +1,24 @@
 //your parameter variables go here!
-// let bgColor = color('#ffff81cb');
-// let outerEyesColor = color('white');
-// let innerEyesColor = color('white');
-// let furColor = color('black');
-// let innerFurColor = color('white');
-let bgColor = "skyblue";
-let outerEyesColor = "#fcf803";
+let bgColor = "#ffdc2e";
+let outerEyesColor = "white";
 let innerEyesColor = "white";
 let furColor = "black";
 let innerFurColor = "white";
 let isHoldingLightstick = true;
-let lightStickDistanceX = 0;
+let lightStickDistanceX = -250;
 let lightStickDistanceY = 0;
-let lightStickRotateAngle = 20;
-let eyesPosXOffset = 10;
-let eyesPosYOffset = 0;
+let lightStickRotateAngle = 180;
+let eyesPosXOffset = 0;
+let eyesPosYOffset = 15;
 let headPopOut = false;
 let innerBodyWidth = 70;
 let innerBodyHeight = 60;
-let innerBodyType = 2; // 1: normal ellipse; 2: Doraemon-like shape
+let innerBodyType = 1; // 1: normal ellipse; 2: Doraemon-like shape
 
 function setup_wallpaper(pWallpaper) {
-  pWallpaper.output_mode(DEVELOP_GLYPH);
-  pWallpaper.resolution(FIT_TO_SCREEN);
-  pWallpaper.show_guide(true); //set this to false when you're ready to print
+  pWallpaper.output_mode(GRID_WALLPAPER);
+  pWallpaper.resolution(A3);
+  pWallpaper.show_guide(false); //set this to false when you're ready to print
 
   //Grid settings
   pWallpaper.grid_settings.cell_width  = 270;
@@ -32,18 +27,12 @@ function setup_wallpaper(pWallpaper) {
 }
 
 function wallpaper_background() {
-  //let bgColor = color('skyblue');
   background(bgColor);
 }
 
 function my_symbol() { // do not rename this function. Treat this similarly to a Draw function
   scale(0.8);
   angleMode(DEGREES);
-
-  // let outerEyesColor = color('#fcf803');
-  //let innerEyesColor = color('white');
-  //let furColor = color('black');
-  //let innerFurColor = color('white');
 
   drawOuterEars(furColor);
   drawInnerEar(innerFurColor);

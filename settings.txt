@@ -10,13 +10,21 @@ Your final settings.txt will look something like this when you are finished:
 Wallpaper 1:
 
 //your parameter variables go here!
-let rect_width  = 20;
-let rect_height = 20;
-let paramter1 = 10;
-let paramter2 = true;
-let paramter3 = 50; 
-let paramter4 = 0; 
-let paramter5 = 60;
+let bgColor = "#dbcdf0";
+let outerEyesColor = "#fcf803";
+let innerEyesColor = "white";
+let furColor = "black";
+let innerFurColor = "white";
+let isHoldingLightstick = true;
+let lightStickDistanceX = 0;
+let lightStickDistanceY = 0;
+let lightStickRotateAngle = 20;
+let eyesPosXOffset = 10;
+let eyesPosYOffset = 0;
+let headPopOut = false;
+let innerBodyWidth = 70;
+let innerBodyHeight = 60;
+let innerBodyType = 1; // 1: normal ellipse; 2: Doraemon-like shape
 
 function setup_wallpaper(pWallpaper) {
   pWallpaper.output_mode(GRID_WALLPAPER);
@@ -24,9 +32,9 @@ function setup_wallpaper(pWallpaper) {
   pWallpaper.show_guide(false); //set this to false when you're ready to print
 
   //Grid settings
-  pWallpaper.grid_settings.cell_width  = 100;
-  pWallpaper.grid_settings.cell_height = 100;
-  pWallpaper.grid_settings.row_offset  = 50;
+  pWallpaper.grid_settings.cell_width  = 270;
+  pWallpaper.grid_settings.cell_height = 220;
+  pWallpaper.grid_settings.row_offset  = 100;
 }
 
 /////////////////////////////////
@@ -34,13 +42,21 @@ function setup_wallpaper(pWallpaper) {
 Wallpaper 2:
 
 //your parameter variables go here!
-let rect_width  = 10;
-let rect_height = 10;
-let paramter1 = 20;
-let paramter2 = false;
-let paramter3 = 50; 
-let paramter4 = 80; 
-let paramter5 = 30;
+let bgColor = "#dbcdf0";
+let outerEyesColor = "#fcf803";
+let innerEyesColor = "white";
+let furColor = "black";
+let innerFurColor = "white";
+let isHoldingLightstick = false;
+let lightStickDistanceX = 0;
+let lightStickDistanceY = 0;
+let lightStickRotateAngle = 20;
+let eyesPosXOffset = 10;
+let eyesPosYOffset = 0;
+let headPopOut = false;
+let innerBodyWidth = 70;
+let innerBodyHeight = 60;
+let innerBodyType = 1; // 1: normal ellipse; 2: Doraemon-like shape
 
 function setup_wallpaper(pWallpaper) {
   pWallpaper.output_mode(GRID_WALLPAPER);
@@ -48,7 +64,231 @@ function setup_wallpaper(pWallpaper) {
   pWallpaper.show_guide(false); //set this to false when you're ready to print
 
   //Grid settings
-  pWallpaper.grid_settings.cell_width  = 100;
-  pWallpaper.grid_settings.cell_height = 100;
-  pWallpaper.grid_settings.row_offset  = 0;
+  pWallpaper.grid_settings.cell_width  = 270;
+  pWallpaper.grid_settings.cell_height = 220;
+  pWallpaper.grid_settings.row_offset  = 100;
+}
+
+/////////////////////////////////
+
+Wallpaper 3:
+
+//your parameter variables go here!
+let bgColor = "black";
+let outerEyesColor = "#fcf803";
+let innerEyesColor = "white";
+let furColor = "black";
+let innerFurColor = "white";
+let isHoldingLightstick = true;
+let lightStickDistanceX = 0;
+let lightStickDistanceY = 0;
+let lightStickRotateAngle = 20;
+let eyesPosXOffset = 10;
+let eyesPosYOffset = 0;
+let headPopOut = false;
+let innerBodyWidth = 70;
+let innerBodyHeight = 60;
+let innerBodyType = 1; // 1: normal ellipse; 2: Doraemon-like shape
+
+function setup_wallpaper(pWallpaper) {
+  pWallpaper.output_mode(GRID_WALLPAPER);
+  pWallpaper.resolution(NINE_LANDSCAPE);
+  pWallpaper.show_guide(false); //set this to false when you're ready to print
+
+  //Grid settings
+  pWallpaper.grid_settings.cell_width  = 270;
+  pWallpaper.grid_settings.cell_height = 220;
+  pWallpaper.grid_settings.row_offset  = 100;
+}
+
+/////////////////////////////////
+
+Wall paper 4:
+
+//your parameter variables go here!
+let bgColor = "black";
+let outerEyesColor = "white";
+let innerEyesColor = "white";
+let furColor = "#43abfa";
+let innerFurColor = "red";
+let isHoldingLightstick = true;
+let lightStickDistanceX = 0;
+let lightStickDistanceY = 0;
+let lightStickRotateAngle = 20;
+let eyesPosXOffset = 10;
+let eyesPosYOffset = 15;
+let headPopOut = false;
+let innerBodyWidth = 70;
+let innerBodyHeight = 60;
+let innerBodyType = 2; // 1: normal ellipse; 2: Doraemon-like shape
+
+function setup_wallpaper(pWallpaper) {
+  pWallpaper.output_mode(GRID_WALLPAPER);
+  pWallpaper.resolution(NINE_LANDSCAPE);
+  pWallpaper.show_guide(false); //set this to false when you're ready to print
+
+  //Grid settings
+  pWallpaper.grid_settings.cell_width  = 270;
+  pWallpaper.grid_settings.cell_height = 220;
+  pWallpaper.grid_settings.row_offset  = 100;
+}
+
+/////////////////////////////////
+
+Wall paper 5:
+
+//your parameter variables go here!
+let bgColor = "#ffc2d1";
+let outerEyesColor = "#fcf803";
+let innerEyesColor = "white";
+let furColor = "black";
+let innerFurColor = "white";
+let isHoldingLightstick = true;
+let lightStickDistanceX = 0;
+let lightStickDistanceY = 0;
+let lightStickRotateAngle = 0;
+let eyesPosXOffset = 10;
+let eyesPosYOffset = 5;
+let headPopOut = false;
+let innerBodyWidth = 70;
+let innerBodyHeight = 60;
+let innerBodyType = 1; // 1: normal ellipse; 2: Doraemon-like shape
+
+function setup_wallpaper(pWallpaper) {
+  pWallpaper.output_mode(GRID_WALLPAPER);
+  pWallpaper.resolution(NINE_LANDSCAPE);
+  pWallpaper.show_guide(false); //set this to false when you're ready to print
+
+  //Grid settings
+  pWallpaper.grid_settings.cell_width  = 270;
+  pWallpaper.grid_settings.cell_height = 220;
+  pWallpaper.grid_settings.row_offset  = 100;
+}
+
+/////////////////////////////////
+
+Wall paper 6:
+
+//your parameter variables go here!
+let bgColor = "#ffc2d1";
+let outerEyesColor = "#fcf803";
+let innerEyesColor = "white";
+let furColor = "black";
+let innerFurColor = "white";
+let isHoldingLightstick = true;
+let lightStickDistanceX = 0;
+let lightStickDistanceY = 0;
+let lightStickRotateAngle = 90;
+let eyesPosXOffset = 10;
+let eyesPosYOffset = 0;
+let headPopOut = false;
+let innerBodyWidth = 70;
+let innerBodyHeight = 60;
+let innerBodyType = 1; // 1: normal ellipse; 2: Doraemon-like shape
+
+function setup_wallpaper(pWallpaper) {
+  pWallpaper.output_mode(GRID_WALLPAPER);
+  pWallpaper.resolution(NINE_LANDSCAPE);
+  pWallpaper.show_guide(false); //set this to false when you're ready to print
+
+  //Grid settings
+  pWallpaper.grid_settings.cell_width  = 270;
+  pWallpaper.grid_settings.cell_height = 220;
+  pWallpaper.grid_settings.row_offset  = 100;
+}
+
+/////////////////////////////////
+
+Wall paper 7:
+
+//your parameter variables go here!
+let bgColor = "#107838";
+let outerEyesColor = "#fcf803";
+let innerEyesColor = "white";
+let furColor = "black";
+let innerFurColor = "white";
+let isHoldingLightstick = false;
+let lightStickDistanceX = 0;
+let lightStickDistanceY = 0;
+let lightStickRotateAngle = 0;
+let eyesPosXOffset = 20;
+let eyesPosYOffset = 0;
+let headPopOut = true;
+let innerBodyWidth = 70;
+let innerBodyHeight = 60;
+let innerBodyType = 1; // 1: normal ellipse; 2: Doraemon-like shape
+
+function setup_wallpaper(pWallpaper) {
+  pWallpaper.output_mode(GRID_WALLPAPER);
+  pWallpaper.resolution(NINE_LANDSCAPE);
+  pWallpaper.show_guide(false); //set this to false when you're ready to print
+
+  //Grid settings
+  pWallpaper.grid_settings.cell_width  = 270;
+  pWallpaper.grid_settings.cell_height = 220;
+  pWallpaper.grid_settings.row_offset  = 100;
+}
+
+/////////////////////////////////
+
+Wall paper 8:
+
+//your parameter variables go here!
+let bgColor = "#107838";
+let outerEyesColor = "#fcf803";
+let innerEyesColor = "white";
+let furColor = "black";
+let innerFurColor = "white";
+let isHoldingLightstick = true;
+let lightStickDistanceX = -250;
+let lightStickDistanceY = 0;
+let lightStickRotateAngle = 20;
+let eyesPosXOffset = 10;
+let eyesPosYOffset = 5;
+let headPopOut = false;
+let innerBodyWidth = 90;
+let innerBodyHeight = 60;
+let innerBodyType = 1; // 1: normal ellipse; 2: Doraemon-like shape
+
+function setup_wallpaper(pWallpaper) {
+  pWallpaper.output_mode(GRID_WALLPAPER);
+  pWallpaper.resolution(NINE_LANDSCAPE);
+  pWallpaper.show_guide(false); //set this to false when you're ready to print
+
+  //Grid settings
+  pWallpaper.grid_settings.cell_width  = 270;
+  pWallpaper.grid_settings.cell_height = 220;
+  pWallpaper.grid_settings.row_offset  = 100;
+}
+
+/////////////////////////////////
+
+Wall paper 9:
+
+//your parameter variables go here!
+let bgColor = "#ffdc2e";
+let outerEyesColor = "white";
+let innerEyesColor = "white";
+let furColor = "black";
+let innerFurColor = "white";
+let isHoldingLightstick = true;
+let lightStickDistanceX = -250;
+let lightStickDistanceY = 0;
+let lightStickRotateAngle = 180;
+let eyesPosXOffset = 0;
+let eyesPosYOffset = 15;
+let headPopOut = false;
+let innerBodyWidth = 70;
+let innerBodyHeight = 60;
+let innerBodyType = 1; // 1: normal ellipse; 2: Doraemon-like shape
+
+function setup_wallpaper(pWallpaper) {
+  pWallpaper.output_mode(GRID_WALLPAPER);
+  pWallpaper.resolution(NINE_LANDSCAPE);
+  pWallpaper.show_guide(false); //set this to false when you're ready to print
+
+  //Grid settings
+  pWallpaper.grid_settings.cell_width  = 270;
+  pWallpaper.grid_settings.cell_height = 220;
+  pWallpaper.grid_settings.row_offset  = 100;
 }
